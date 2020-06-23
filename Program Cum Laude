@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+//LATIHAN SEBELUM UAS (Variable tipe data) 23/06/2020 MUHAMMAD REZEKI 
+using namespace std;
+
+int main (){
+	char nama[100];
+	int umur;
+	string nomer_Hp;
+	float tinggi_Badan;
+	double berat_Badan,nilai_Ipk;
+	
+	// \n = sama prinsipnya dengan endl; untuk memberi 1 enter
+	cout << "\t TEM POLANKA\t\n";
+	cout << "SILAHKAN ISI DATA DENGAN TELITI  \n";
+	cout << "Masukkan Nama anda : ";
+	cin.getline(nama,100);
+	cout << endl;
+	cout << "Masukkan Umur anda : ";
+	cin >> umur;
+	cout << endl;
+	cout << "Masukkan Tinggi anda : ";
+	cin >> tinggi_Badan;
+	cout << endl;
+	cout << "Masukkan Berat anda : ";
+	cin >> berat_Badan;
+	cout << endl;
+	cout << "Masukkan Nomer Hp anda : ";
+	cin >> nomer_Hp;
+	cout << endl;
+	cout << "Masukkan Nilai Ipk anda :";
+	cin >> nilai_Ipk;
+	cout << endl;
+	
+	//*********************************************************************
+	system ("cls");
+	cout << endl;
+	cout << "\t INI ADALAH DATA ANDA \t \n";
+	cout << "   Nama :"<< nama <<endl;
+	cout << "   Umur :"<< umur << " Tahun" <<endl;
+	cout << "   Tinggi Badan :"<< tinggi_Badan <<" Cm" <<endl;
+	cout << "   Berat Badan :"<< berat_Badan <<" Kg" <<endl;
+	cout << "   Nomer Hp : " << nomer_Hp <<endl;
+	cout << "   Nilai IPK : " << nilai_Ipk;
+	cout << endl;
+	bool w,k;
+
+	w = nilai_Ipk >= 3.40;
+	k = nilai_Ipk < 3.40;
+	if (w){
+		cout << "   Selamat anda lulus dengan penghargaan CUM LAUDE \n";
+		cout << "   Usaha tidak akan pernah mengkhianati hasil";
+	} 
+	
+	if (k){
+		cout << "   Mohon maaf nilai anda belum memenuhi syarat untuk CUM LAUDE \n";
+		cout << "   Apalah arti sebuah Nilai , tetap semangat dan tunjukan skill anda ";
+	}
+return 0;
+}
